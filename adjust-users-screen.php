@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Adjust Users Screen
-Version: 0.2
+Version: 0.1
 Plugin URI: http://drakard.com/
 Description: Alters the Users screen in the admin, re-ordering the columns and turning them on/off so as to avoid duplication or columns you don't need to see.
 Author: Keith Drakard
