@@ -1,0 +1,56 @@
+@import 'library';
+
+#sortable {
+	max-width:50%;
+	min-width:35rem;
+
+	li {
+		text-align:left;
+	}
+
+	label {
+		display:block;
+		width:100%;
+		margin:0 0 1rem; padding:1rem 2rem;
+		cursor:move;
+		font-weight:normal;
+		background-color:#dddddd;
+		color:#777777;
+		border:0.1rem solid #aaaaaa;
+		.rounded(0.8rem);
+		.box-shadow(0 0 0.6rem #aaaaaa inset);
+		.transition();
+
+		&:hover {
+			background-color:#eeeeff;
+			color:#000000;
+		}
+
+	}
+
+	input.toggle {
+		border:0;
+		width:1px; height:1px;
+		margin:-1px; padding:0;
+		overflow:hidden;
+		position:absolute;
+		clip:rect(0 0 0 0);
+
+		&:checked + label {
+			font-weight:bold;
+			background-color:#2ea2cc;
+			color:#ffffff;
+			text-shadow:0 0 0.1rem #111111;
+			border-color:#00a9d7;
+			.box-shadow(0 0 0.1rem #111111);
+
+			&:hover {
+				background-color:#ffba00;
+				color:#000000;
+				text-shadow:0 0 0.1rem #ffffff;
+				border-color:transparent;
+			}
+		}
+
+	}
+}

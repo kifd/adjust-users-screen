@@ -1,0 +1,58 @@
+#sortable {
+  max-width: 50%;
+  min-width: 35rem;
+}
+#sortable li {
+  text-align: left;
+}
+#sortable label {
+  display: block;
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: 1rem 2rem;
+  cursor: move;
+  font-weight: normal;
+  background-color: #dddddd;
+  color: #777777;
+  border: 0.1rem solid #aaaaaa;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  border-radius: 0.8rem;
+  -webkit-box-shadow: 0 0 0.6rem #aaaaaa inset;
+  -moz-box-shadow: 0 0 0.6rem #aaaaaa inset;
+  box-shadow: 0 0 0.6rem #aaaaaa inset;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+#sortable label:hover {
+  background-color: #eeeeff;
+  color: black;
+}
+#sortable input.toggle {
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+#sortable input.toggle:checked + label {
+  font-weight: bold;
+  background-color: #2ea2cc;
+  color: white;
+  text-shadow: 0 0 0.1rem #111111;
+  border-color: #00a9d7;
+  -webkit-box-shadow: 0 0 0.1rem #111111;
+  -moz-box-shadow: 0 0 0.1rem #111111;
+  box-shadow: 0 0 0.1rem #111111;
+}
+#sortable input.toggle:checked + label:hover {
+  background-color: #ffba00;
+  color: black;
+  text-shadow: 0 0 0.1rem white;
+  border-color: transparent;
+}
